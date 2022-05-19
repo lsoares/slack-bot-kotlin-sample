@@ -14,7 +14,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
 
-//    implementation("org.slf4j:slf4j-simple:1.+")
+    implementation("org.slf4j:slf4j-simple:1.+")
     implementation("com.slack.api:bolt:1.+")
     implementation("com.slack.api:bolt-servlet:1.+")
     implementation("com.slack.api:bolt-jetty:1.+")
