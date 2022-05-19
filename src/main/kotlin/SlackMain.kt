@@ -5,10 +5,8 @@ import java.lang.System.getenv
 
 fun main() {
     val app = App()
-    app.command("/hello") { _, ctx ->
-        print("hello!!!")
+    app.command("/hello") { _, _ ->
         Response.ok("world")
-        ctx.ack("world")
     }
     SlackAppServer(app, getenv("PORT")?.toInt() ?: 8080)
         .start()
